@@ -6,6 +6,9 @@ const m1 = document.getElementById("M1");
 const s0 = document.getElementById("S0");
 const s1 = document.getElementById("S1");
 
+const transition_time = 0.1 // seconds
+let lastNow = new Date();  
+
 function updateTimer() {
     let now = new Date();  
     let hours = now.getHours().toString().padStart(2, '0');  
@@ -18,6 +21,8 @@ function updateTimer() {
     m1.src = `images/output/${minutes[1]}.png`;
     s0.src = `images/output/${seconds[0]}.png`;
     s1.src = `images/output/${seconds[1]}.png`;
+
+    lastNow = now;
 }
 
 setInterval(updateTimer, 1000); // Updates the timer every second
