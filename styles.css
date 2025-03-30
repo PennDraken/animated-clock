@@ -2,13 +2,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed */
+    height: 100vh;
+    margin: 0;
 }
 
 .clock-container {
     display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1800px;
+    justify-content: center;
 }
 
 .group {
-    padding: 10px;
+    display: flex;
+}
+
+img {
+    max-width: 100%; /* Ensure images scale based on container */
+    height: auto; /* Keep the aspect ratio */
+    width: 40%; /* Ensure that the images take up a portion of their parent */
 }
