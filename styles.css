@@ -12,14 +12,17 @@ body {
     width: 100%;
     max-width: 1800px;
     justify-content: center;
+    
 }
 
 .group {
     display: flex;
+    
 }
 
 img {
     max-width: 100%; /* Ensure images scale based on container */
     height: auto; /* Keep the aspect ratio */
     width: 40%; /* Ensure that the images take up a portion of their parent */
+    padding: 0.2vw;
 }
