@@ -4,3 +4,11 @@ body {
     align-items: center;
     height: 100vh; /* Adjust as needed */
 }
+
+.clock-container {
+    display: flex;
+}
+
+.group {
+    padding: 10px;
+}

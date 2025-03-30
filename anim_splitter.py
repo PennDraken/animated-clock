@@ -1,16 +1,16 @@
 from PIL import Image
 import os
 
-input_fp = "images/numbers2.png"
+input_fp = "images/numbers3.png"
 target = "images/output"
 grid_size = 8 # Pixels
 num_width  = 5
 num_height = 7
-num_shift_x = 4 # How much each number is shifted by
+num_shift_x = 5 # How much each number is shifted by
 num_shift_y = 6
 
 frames_per_column = [
-    15,
+    12,
     4,
     6,
     6,
@@ -19,8 +19,11 @@ frames_per_column = [
     4,
     12,
     7,
-    7
+    7,
+    7,
+    4
 ]
+
 #
 #  Index 0 of each row will just be named this
 row_names = [
@@ -34,6 +37,8 @@ row_names = [
     "7",
     "8",
     "9",
+    "3",
+    "5",
 ]
 
 # Index 1-n will be named this + frame number (ie index in row)
@@ -48,6 +53,8 @@ transition_names = [
     "7-8_",
     "8-9_",
     "9-0_",
+    "3-0_",
+    "5-0_"
 ]
 
 os.makedirs(target, exist_ok=True)
