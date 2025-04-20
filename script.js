@@ -32,7 +32,7 @@ async function animateContainer(container, path, maxFrames) {
     if (maxFrames==undefined) {
         return;
     }
-    const update_interval = Math.round(transition_time/maxFrames);
+    const update_interval = 60 // Math.round(transition_time/maxFrames);
     let frame = 1;
     
     // Function to update the container with the new image
